@@ -1,0 +1,13 @@
+[package]
+name = "serde-none-group"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+syn-full = ["another-proc-macro/syn-full"]
+
+[dependencies]
+serde = { version = "=1.0.157", features = ["derive"] }
+
+# Comment this dependency and serde is happy again
+another-proc-macro = { path = "another-proc-macro" }

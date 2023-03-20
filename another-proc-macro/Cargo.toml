@@ -1,0 +1,13 @@
+[package]
+name = "another-proc-macro"
+version = "0.1.67"
+edition = "2021"
+
+[features]
+syn-full = ["syn/full"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "=2.0.2", default-features = false }
